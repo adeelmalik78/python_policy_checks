@@ -1,0 +1,1 @@
+DROP VIEW customer_list;

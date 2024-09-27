@@ -1,0 +1,1 @@
+CREATE TABLE "film_category" ("film_id" SMALLINT NOT NULL, "category_id" SMALLINT NOT NULL, "last_update" TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW() NOT NULL, CONSTRAINT "film_category_pkey" PRIMARY KEY ("film_id", "category_id"));

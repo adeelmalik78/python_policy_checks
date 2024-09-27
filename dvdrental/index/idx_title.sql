@@ -1,0 +1,1 @@
+CREATE INDEX "idx_title" ON "film"("title");

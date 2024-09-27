@@ -1,0 +1,1 @@
+CREATE INDEX "film_fulltext_idx" ON "film"("fulltext");

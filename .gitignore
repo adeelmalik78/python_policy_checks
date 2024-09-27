@@ -1,0 +1,7 @@
+Commands.txt
+liquibase.checks-settings.*
+**/*liquibase.properties
+liquibase.properties
+
+
+

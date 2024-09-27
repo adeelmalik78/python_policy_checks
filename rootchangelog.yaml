@@ -1,0 +1,6 @@
+databaseChangeLog:
+
+# database1 = dvdrental
+- include:
+    file: dvdrental/database1changelog.yaml
+    relativeToChangelogFile: true

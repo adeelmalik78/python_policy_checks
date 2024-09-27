@@ -1,0 +1,38 @@
+databaseChangeLog:
+
+# - changeSet:
+#     id: materializedview1
+#     author: nvoxland
+#     changes:
+#     - sqlFile:
+#         path: materializedview1.sql
+#         relativeToChangelogFile: true
+#     - rollback:
+#         - sqlFile:
+#             path: materializedview1-rollback.sql
+#             relativeToChangelogFile: true
+
+# - changeSet:
+#     id: materializedview2
+#     author: nvoxland
+#     changes:
+#     - sqlFile:
+#         path: materializedview2.sql
+#         relativeToChangelogFile: true
+#     - rollback:
+#         - sqlFile:
+#             path: materializedview2-rollback.sql
+#             relativeToChangelogFile: true
+
+# - changeSet:
+#     id: materializedview3
+#     author: nvoxland
+#     changes:
+#     - sqlFile:
+#         path: materializedview3.sql
+#         relativeToChangelogFile: true
+#     - rollback:
+#         - sqlFile:
+#             path: materializedview3-rollback.sql
+#             relativeToChangelogFile: true
+

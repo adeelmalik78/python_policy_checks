@@ -1,0 +1,1 @@
+DROP INDEX film_fulltext_idx;

@@ -1,0 +1,158 @@
+databaseChangeLog:
+
+- changeSet:
+    id: customer_customer_id_seq
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: customer_customer_id_seq.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: customer_customer_id_seq-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: actor_actor_id_seq
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: actor_actor_id_seq.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: actor_actor_id_seq-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: category_category_id_seq
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: category_category_id_seq.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: category_category_id_seq-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: film_film_id_seq
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: film_film_id_seq.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: film_film_id_seq-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: address_address_id_seq
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: address_address_id_seq.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: address_address_id_seq-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: city_city_id_seq
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: city_city_id_seq.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: city_city_id_seq-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: country_country_id_seq
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: country_country_id_seq.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: country_country_id_seq-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: inventory_inventory_id_seq
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: inventory_inventory_id_seq.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: inventory_inventory_id_seq-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: language_language_id_seq
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: language_language_id_seq.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: language_language_id_seq-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: payment_payment_id_seq
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: payment_payment_id_seq.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: payment_payment_id_seq-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: rental_rental_id_seq
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: rental_rental_id_seq.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: rental_rental_id_seq-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: store_store_id_seq
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: store_store_id_seq.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: store_store_id_seq-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: staff_staff_id_seq
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: staff_staff_id_seq.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: staff_staff_id_seq-rollback.sql
+            relativeToChangelogFile: true
+

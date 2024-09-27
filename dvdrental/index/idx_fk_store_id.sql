@@ -1,0 +1,1 @@
+CREATE INDEX "idx_fk_store_id" ON "customer"("store_id");

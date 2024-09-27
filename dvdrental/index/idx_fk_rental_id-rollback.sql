@@ -1,0 +1,1 @@
+DROP INDEX idx_fk_rental_id;

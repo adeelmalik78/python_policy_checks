@@ -1,0 +1,1 @@
+CREATE INDEX "idx_store_id_film_id" ON "inventory"("store_id", "film_id");

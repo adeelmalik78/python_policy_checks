@@ -1,0 +1,1 @@
+CREATE INDEX "idx_fk_customer_id" ON "payment"("customer_id");

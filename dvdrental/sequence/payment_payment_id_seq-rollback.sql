@@ -1,0 +1,1 @@
+DROP SEQUENCE "payment_payment_id_seq";

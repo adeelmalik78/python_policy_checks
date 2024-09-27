@@ -1,0 +1,38 @@
+databaseChangeLog:
+
+# - changeSet:
+#     id: procedure1
+#     author: nvoxland
+#     changes:
+#     - sqlFile:
+#         path: procedure1.sql
+#         relativeToChangelogFile: true
+#     - rollback:
+#         - sqlFile:
+#             path: procedure1-rollback.sql
+#             relativeToChangelogFile: true
+
+# - changeSet:
+#     id: procedure2
+#     author: nvoxland
+#     changes:
+#     - sqlFile:
+#         path: procedure2.sql
+#         relativeToChangelogFile: true
+#     - rollback:
+#         - sqlFile:
+#             path: procedure2-rollback.sql
+#             relativeToChangelogFile: true
+
+# - changeSet:
+#     id: procedure3
+#     author: nvoxland
+#     changes:
+#     - sqlFile:
+#         path: procedure3.sql
+#         relativeToChangelogFile: true
+#     - rollback:
+#         - sqlFile:
+#             path: procedure3-rollback.sql
+#             relativeToChangelogFile: true
+

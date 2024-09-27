@@ -1,0 +1,38 @@
+databaseChangeLog:
+
+# - changeSet:
+#     id: packagebody1
+#     author: nvoxland
+#     changes:
+#     - sqlFile:
+#         path: packagebody1.sql
+#         relativeToChangelogFile: true
+#     - rollback:
+#         - sqlFile:
+#             path: packagebody1-rollback.sql
+#             relativeToChangelogFile: true
+
+# - changeSet:
+#     id: packagebody2
+#     author: nvoxland
+#     changes:
+#     - sqlFile:
+#         path: packagebody2.sql
+#         relativeToChangelogFile: true
+#     - rollback:
+#         - sqlFile:
+#             path: packagebody2-rollback.sql
+#             relativeToChangelogFile: true
+
+# - changeSet:
+#     id: packagebody3
+#     author: nvoxland
+#     changes:
+#     - sqlFile:
+#         path: packagebody3.sql
+#         relativeToChangelogFile: true
+#     - rollback:
+#         - sqlFile:
+#             path: packagebody3-rollback.sql
+#             relativeToChangelogFile: true
+

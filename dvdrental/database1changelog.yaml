@@ -1,0 +1,36 @@
+databaseChangeLog:
+
+- include:
+    file: sequence/changelog.yaml
+    relativeToChangelogFile: true
+- include:
+    file: tables/changelog.yaml
+    relativeToChangelogFile: true
+- include:
+    file: index/changelog.yaml
+    relativeToChangelogFile: true
+- include:
+    file: functions/changelog.yaml
+    relativeToChangelogFile: true
+- include:
+    file: views/changelog.yaml
+    relativeToChangelogFile: true
+- include:
+    file: procedures/changelog.yaml
+    relativeToChangelogFile: true
+- include:
+    file: packages/changelog.yaml
+    relativeToChangelogFile: true
+- include:
+    file: packagebody/changelog.yaml
+    relativeToChangelogFile: true
+- include:
+    file: triggers/changelog.yaml
+    relativeToChangelogFile: true
+- include:
+    file: data/changelog.yaml
+    relativeToChangelogFile: true
+- include:
+    file: materializedviews/changelog.yaml
+    relativeToChangelogFile: true
+

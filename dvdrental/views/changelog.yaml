@@ -1,0 +1,86 @@
+databaseChangeLog:
+
+- changeSet:
+    id: customer_list
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: customer_list.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: customer_list-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: film_list
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: film_list.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: film_list-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: nicer_but_slower_film_list
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: nicer_but_slower_film_list.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: nicer_but_slower_film_list-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: actor_info
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: actor_info.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: actor_info-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: sales_by_film_category
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: sales_by_film_category.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: sales_by_film_category-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: sales_by_store
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: sales_by_store.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: sales_by_store-rollback.sql
+            relativeToChangelogFile: true
+
+- changeSet:
+    id: staff_list
+    author: workshop-user
+    changes:
+    - sqlFile:
+        path: staff_list.sql
+        relativeToChangelogFile: true
+    - rollback:
+        - sqlFile:
+            path: staff_list-rollback.sql
+            relativeToChangelogFile: true
+

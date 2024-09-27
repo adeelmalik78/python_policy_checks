@@ -1,0 +1,1 @@
+DROP FUNCTION "public"._group_concat;

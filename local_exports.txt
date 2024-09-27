@@ -1,0 +1,3 @@
+export LB_BASE_DIR=.
+export LB_ENVIRONMENT=DEV
+export LB_TEST_CHECKS='T'

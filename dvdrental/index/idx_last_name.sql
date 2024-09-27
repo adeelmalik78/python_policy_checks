@@ -1,0 +1,1 @@
+CREATE INDEX "idx_last_name" ON "customer"("last_name");
