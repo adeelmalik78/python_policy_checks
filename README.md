@@ -35,7 +35,7 @@ This repository contains test cases for Custom Policy Checks.
     --checks-scripts-enabled=true
     ```
 # Tutorials
-There are two tutorials provided in this repo:
+There are two tutorials provided in this repo. These are a great starting point to learn from a helloworld example:
 1. [Python Custom Policy Checks Tutorial for Database Checks](Tutorial/PythonCustomPolicyChecksTutorialforDatabaseChecks.pdf)
 1. [Python Custom Policy Checks Tutorial for Changelog Checks](Tutorials/PythonCustomPolicyChecksTutorialforDatabaseChecks.pdf)
 
