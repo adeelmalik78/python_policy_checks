@@ -95,3 +95,10 @@ UPDATE person
 	SET first_name='Ryan', last_name='Campbell'
 	WHERE id=1;
 --rollback UPDATE person SET first_name='Adeel', last_name='Malik' WHERE id=1;
+
+--changeset amalik:boss_view
+CREATE VIEW boss AS
+    SELECT *
+    FROM person
+    WHERE id = '1';
+--rollback DROP VIEW boss;
