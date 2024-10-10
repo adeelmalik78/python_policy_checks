@@ -21,19 +21,11 @@ This repository contains test cases for Custom Policy Checks.
      ```
 1. Java 17 or higher is required. 
 1. Download and extract the `liquibase-<version>.zip` file.
-1. Ensure this property (liquibase-checks-enabled) is set to enable custom policy checks.<br>
-    *Environment variable*
-    ```
-    LIQUIBASE_COMMAND_CHECKS_RUN_CHECKS_SCRIPTS_ENABLED='true'
-    ```
-    *liquibase.properties:*
-    ```
-    checks-scripts-enabled=true
-    ```
-    *CLI:*
-    ```
-    --checks-scripts-enabled=true
-    ```
+1. Ensure this property (*liquibase-checks-enabled*) is set to enable custom policy checks.<br>
+    *Environment variable*: `LIQUIBASE_COMMAND_CHECKS_RUN_CHECKS_SCRIPTS_ENABLED='true'`
+    *liquibase.properties:* `checks-scripts-enabled=true`
+    *CLI:* `--checks-scripts-enabled=true`
+
 # Tutorials
 There are two tutorials provided in this repo. These are a great starting point to learn from a helloworld example:
 1. [Python Custom Policy Checks Tutorial for Database Checks](Tutorial/PythonCustomPolicyChecksTutorialforDatabaseChecks.pdf)
