@@ -1,1 +1,0 @@
-DROP SEQUENCE "inventory_inventory_id_seq";

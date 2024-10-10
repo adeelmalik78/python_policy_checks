@@ -1,1 +1,0 @@
-CREATE INDEX "idx_fk_rental_id" ON "payment"("rental_id");

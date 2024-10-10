@@ -1,1 +1,0 @@
-CREATE INDEX "idx_fk_inventory_id" ON "rental"("inventory_id");

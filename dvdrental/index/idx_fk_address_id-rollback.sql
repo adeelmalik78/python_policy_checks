@@ -1,1 +1,0 @@
-DROP INDEX "idx_fk_address_id";

@@ -1,1 +1,0 @@
-CREATE INDEX "idx_fk_language_id" ON "film"("language_id");

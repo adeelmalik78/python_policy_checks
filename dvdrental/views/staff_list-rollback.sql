@@ -1,1 +1,0 @@
-DROP VIEW staff_list;

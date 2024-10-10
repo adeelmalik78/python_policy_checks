@@ -1,1 +1,0 @@
-CREATE INDEX "idx_fk_film_id" ON "film_actor"("film_id");

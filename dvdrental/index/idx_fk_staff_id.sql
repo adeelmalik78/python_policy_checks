@@ -1,1 +1,0 @@
-CREATE INDEX "idx_fk_staff_id" ON "payment"("staff_id");

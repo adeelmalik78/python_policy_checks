@@ -1,1 +1,0 @@
-DROP SEQUENCE actor_actor_id_seq;

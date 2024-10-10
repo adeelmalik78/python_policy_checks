@@ -1,1 +1,0 @@
-CREATE INDEX "idx_fk_address_id" ON "customer"("address_id");

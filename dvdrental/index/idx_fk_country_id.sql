@@ -1,1 +1,0 @@
-CREATE INDEX "idx_fk_country_id" ON "city"("country_id");

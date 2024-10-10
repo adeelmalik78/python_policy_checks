@@ -1,1 +1,0 @@
-DROP SEQUENCE "address_address_id_seq"

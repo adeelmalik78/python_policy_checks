@@ -38,8 +38,15 @@ if liquibase_utilities.is_table(database_object):
     if pk_object is None:
         liquibase_logger.info(f"Table \"{table_name}\" does not have a primary key. Check skipped.")
     else:
-        pk_name_current = pk_object.getName()
-        pk_name_standard = f"PK_{table_name}"
+        pk_name_current = pk_object.getName().lower()
+        pk_name_standard = liquibase_utilities.get_arg("STANDARD") + f"_{table_name}" 
+        pk_name_standard = pk_name_standard.lower()
+        # print("Found primary key: " + pk_name_standard + " Expected name: " + pk_name_current ) 
+        if pk_name_standard in pk_name_current:
+            print("SUCCESS! Found primary key: " + pk_name_current + " Expected name: " +  pk_name_standard) 
+        else:
+            print("ERROR!!! Found primary key: >>> " + pk_name_current + " <<< Expected name: " + pk_name_standard ) 
+        # pk_name_standard = f"PK_{table_name}"
         if pk_name_standard not in pk_name_current:
             liquibase_status.fired = True
             status_message = str(liquibase_utilities.get_script_message()).replace("__CURRENT_NAME__", f"\"{pk_name_current}\"")

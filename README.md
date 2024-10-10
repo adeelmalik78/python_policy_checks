@@ -175,6 +175,24 @@ To use a local Python environment, versus the built-in one, follow these steps.<
     | Path | Scripts/pk_names.py |
     | Args | |
     | Snapshot | false |
+1. [**UCNamingConvention**](Scripts/uc_names_pg.py)
+    | Key | Value |
+    |--------|----------|
+    | Database | Relational |
+    ```
+    liquibase checks customize --check-name=CustomCheckTemplate
+    ```
+    | Prompt | Response |
+    |--------|----------|
+    | Short Name | UCNamingConvention |
+    | Severity | 0-4 |
+    | Description | Unique constraint name must be in the form of xak_tablename |
+    | Scope | DATABASE |
+    | Message | Unique constraint name >>> \_\_CURRENT_NAME\_\_ <<< must be in this format: (\_\_NAME_STANDARD\_\_). |
+    | Type | PYTHON |
+    | Path | Scripts/uc_names.py |
+    | Args | STANDARD=xak |
+    | Snapshot | false |
 1. [**VarcharDataIntegrity**](Scripts/varchar_data_integrity.py)
     | Key | Value |
     |--------|----------|
@@ -211,7 +229,7 @@ To use a local Python environment, versus the built-in one, follow these steps.<
     | Path | Scripts/collection_without_validator.py |
     | Args |  |
     | Snapshot | false |
-1. [**PKNamingConvention**](Scripts/pk_names_pg.py)
+1. [**PKNamingConventionPG**](Scripts/pk_names_pg.py)
     | Key | Value |
     |--------|----------|
     | Database | Relational |

@@ -1,1 +1,0 @@
-DROP AGGREGATE public.group_concat(text);

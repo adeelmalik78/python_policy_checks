@@ -1,1 +1,0 @@
-DROP SEQUENCE "category_category_id_seq";

@@ -1,1 +1,0 @@
-CREATE UNIQUE INDEX "idx_unq_manager_staff_id" ON "store"("manager_staff_id");

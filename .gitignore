@@ -1,5 +1,5 @@
 Commands.txt
-liquibase.checks-settings.*
+# liquibase.checks-settings.*
 **/*liquibase.properties
 liquibase.properties
 

@@ -1,1 +1,0 @@
-DROP SEQUENCE customer_customer_id_seq;

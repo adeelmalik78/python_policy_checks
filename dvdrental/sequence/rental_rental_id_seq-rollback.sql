@@ -1,1 +1,0 @@
-DROP SEQUENCE "rental_rental_id_seq";

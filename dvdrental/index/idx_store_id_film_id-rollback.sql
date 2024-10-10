@@ -1,1 +1,0 @@
-DROP INDEX idx_store_id_film_id;

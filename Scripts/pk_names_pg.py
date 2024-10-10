@@ -38,7 +38,8 @@ if "table" in database_object.getObjectTypeName().lower():
         pk_name_current = pk_object.getName()
         # pk_standard = liquibase_utilities.get_arg("STANDARD")
         # pk_name_standard = f"{table_name}_{pk_standard}"
-        pk_name_standard = f"{table_name}_" + liquibase_utilities.get_arg("STANDARD")
+        # pk_name_standard = f"{table_name}_" + liquibase_utilities.get_arg("STANDARD")
+        pk_name_standard = liquibase_utilities.get_arg("STANDARD") + f"_{table_name}" 
         # pk_name_standard = f"{table_name}_pk"
         print("Standard: " + pk_name_standard + " Current: " + pk_name_current ) 
         if pk_name_standard not in pk_name_current:

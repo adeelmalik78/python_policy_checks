@@ -1,1 +1,0 @@
-DROP SEQUENCE staff_staff_id_seq;

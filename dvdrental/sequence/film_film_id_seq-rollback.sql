@@ -1,1 +1,0 @@
-DROP SEQUENCE "film_film_id_seq";

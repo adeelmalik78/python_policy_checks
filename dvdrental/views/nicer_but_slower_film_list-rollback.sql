@@ -1,1 +1,0 @@
-DROP VIEW nicer_but_slower_film_list;

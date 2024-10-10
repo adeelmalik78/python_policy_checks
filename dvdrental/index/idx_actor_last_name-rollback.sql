@@ -1,1 +1,0 @@
-DROP INDEX "idx_actor_last_name";

@@ -1,30 +1,4 @@
 ###
-### This flowfile is intended to highlight capabilities of Liquibase Pro
-### Review and update prior to use
-###
-### Liquibase version: 4.27.0+
-###
-### Liquibase sales: https://www.liquibase.com/contact-us
-### Liquibase support: https://support.liquibase.com/knowledge
-###
-
-### 
-### Prior to running the following files must exist in repository
-###
-### 1. liquibase.flowfile.yaml
-###    This flow file
-###    https://docs.liquibase.com/commands/flow/flow.html
-###
-### 2. liquibase.checks-settings.conf
-###    Liquibase quality checks configuration file
-###    https://docs.liquibase.com/commands/quality-checks/home.html
-###
-### 3. changelog.main.xml
-###    Root Liquibase changelog file
-###    https://docs.liquibase.com/concepts/changelogs/home.html
-###
-
-###
 ### Global variables used in the flowfile
 ###
 globalVariables:
@@ -125,7 +99,7 @@ stages:
       # https://docs.liquibase.com/commands/quality-checks/home.html
       #
       - type: liquibase
-        if: "${LB_TEST_CHECKS} == T"
+        # if: "${LB_TEST_CHECKS} == T"
         command: checks show
         cmdArgs: { check-status: "enabled" }
       #
@@ -133,9 +107,16 @@ stages:
       # https://docs.liquibase.com/commands/quality-checks/home.html
       #
       - type: liquibase
-        if: "${LB_TEST_CHECKS} == T"
+        # if: "${LB_TEST_CHECKS} == T"
         command: checks run
-        cmdArgs: { report-enabled: "true", report-path: "${LB_BASE_DIR}", report-name: "${CHECKS_REPORT}", checks-scope: "changelog, database", changeset-filter: "pending", auto-update: "on" }
+        cmdArgs: { 
+            # report-enabled: "true", 
+            # report-path: "${LB_BASE_DIR}", 
+            # report-name: "${CHECKS_REPORT}", 
+            checks-scope: "changelog, database", 
+            changeset-filter: "pending", 
+            auto-update: "on" 
+            }
       #
       # Run diff and check for drift
       # Update referenceURL database type in cmdArgs (e.g., oracle, mssql, snowflake, etc.)
