@@ -100,6 +100,24 @@ To use a local Python environment, versus the built-in one, follow these steps.<
 
 # Configuration Steps
 **Note:** script path includes name of script file
+
+## Changelog Checks
+1. [**DisallowSchemaInChangelog**](Scripts/disallow_schema_changelog.py)
+
+    ```
+    % liquibase checks customize --check-name=CustomCheckTemplate
+    ```
+    | Prompt | Response |
+    |--------|----------|
+    | Short Name | DisallowSchemaInChangelog |
+    | Severity | 0-4 |
+    | Description |  |
+    | Scope | changelog |
+    | Message | |
+    | Type | python |
+    | Path | Scripts/disallow_schema_changelog.py |
+    | Args |  |
+    | Snapshot | false |
 1. [**TableNamesMustBeUppercase**](Scripts/table_names_uppercase.py)
 
     ```
@@ -116,6 +134,24 @@ To use a local Python environment, versus the built-in one, follow these steps.<
     | Path | Scripts/table_names_uppercase.py |
     | Args |  |
     | Snapshot | false |
+1. [**TableNameNoSpecialCharactersChangelog**](Scripts/tableName_noSpecialCharacters_changelog.py)
+
+    ```
+    % liquibase checks customize --check-name=CustomCheckTemplate
+    ```
+    | Prompt | Response |
+    |--------|----------|
+    | Short Name | TableNameNoSpecialCharactersChangelog |
+    | Severity | 0-4 |
+    | Description | Table name |
+    | Scope | changelog |
+    | Message | |
+    | Type | python |
+    | Path | Scripts/tableName_noSpecialCharacters_changelog.py |
+    | Args |  |
+    | Snapshot | false |
+
+## Database Checks
 1. [**VarcharMaxSize**](Scripts/varchar_max_size.py)
     ```
     % liquibase checks customize --check-name=CustomCheckTemplate
