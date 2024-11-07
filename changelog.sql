@@ -2,7 +2,7 @@
 
 --changeset adeel:table1 stripComments:false
 -- this is a comment
-create table table1 (
+create table liquibase_user.table1 (
     id int,
     first_name varchar(50) not null,
     last_name varchar(50) not null,
@@ -15,7 +15,7 @@ create table table1 (
 --rollback drop table table1
 
 --changeset adeel:table1_index
-create index xie01_table1 on table1 ( id, first_name, last_name, address1, address2, city );
+create index xie01_table1 on liquibase_user.table1 ( id, first_name, last_name, address1, address2, city );
 --rollback drop index xie01_table1 
 
 --changeset adeel:table2
@@ -38,14 +38,14 @@ create index xie_table2 on table2 ( id, first_name, last_name, address1, address
 --rollback drop index xie_table2 
 
 --changeset adeel:person
-CREATE TABLE person (
+CREATE TABLE public.person (
     id int,
     first_name varchar(50) NOT NULL,
     last_name varchar(50) NOT NULL,
     CONSTRAINT "pk_person" PRIMARY KEY (id), 
     CONSTRAINT "ak_person" UNIQUE (id,last_name)
 )
---rollback drop table person
+--rollback drop table public.person
 
 --changeset adeel:person_index
 create index xie03_person on person ( id, first_name, last_name );
@@ -69,11 +69,6 @@ CREATE TABLE "employee+" (
 )
 --rollback drop table "employee+"
 
---changeset adeel:employee_rename
--- RENAME TABLE "employee+" TO "employee-"
-ALTER TABLE "employee+" RENAME TO "employee-"
---rollback ALTER TABLE "employee-" RENAME TO "employee+"
-
 --changeset amalik:insert_adeel
 INSERT INTO person (id,first_name,last_name)
 	VALUES (1,'Adeel','Ashraf');
@@ -95,10 +90,3 @@ UPDATE person
 	SET first_name='Ryan', last_name='Campbell'
 	WHERE id=1;
 --rollback UPDATE person SET first_name='Adeel', last_name='Malik' WHERE id=1;
-
---changeset amalik:boss_view
-CREATE VIEW boss AS
-    SELECT *
-    FROM person
-    WHERE id = '1';
---rollback DROP VIEW boss;
